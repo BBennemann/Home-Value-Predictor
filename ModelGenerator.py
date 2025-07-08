@@ -24,7 +24,7 @@ print(list(features))
 
 nome_arquivo_modelo = 'modelo.pkl'
 
-with open(nome_arquivo_modelo, 'wb') as file:
+with open(f"models/{nome_arquivo_modelo}", 'wb') as file:
     pickle.dump(regressao_linear, file)
 
 def Previsao(teste):
