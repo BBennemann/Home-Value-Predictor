@@ -1,101 +1,75 @@
-# HOME-VALUE-PREDICTOR 🏠📈
+# Home Value Predictor
 
-## About the Project
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.2-orange?style=for-the-badge&logo=scikit-learn)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28.2-red?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
 
-HOME-VALUE-PREDICTOR is a machine learning project developed in Python that uses Linear Regression to predict house prices based on CSV datasets.  
-The project reads and processes structured data using a clean pipeline built with Pandas, NumPy, and Scikit-learn.
+## About The Project
 
-The main goal is to offer a simple yet effective example of a housing price prediction model using classic regression techniques.
+This project is a machine learning application designed to predict housing sale prices based on a set of features. It includes a data processing and model training pipeline, as well as an interactive web interface for users to get instant price predictions.
 
----
+This application was built with:
+* **Python**
+* **Pandas** for data manipulation
+* **Scikit-learn** for model creation and data preprocessing
+* **Streamlit** for the interactive web UI
 
-## Technologies Used
+This project was developed as a personal study in machine learning and data science, originating from the "House Prices - Advanced Regression Techniques" challenge on Kaggle.
 
-- Python 3  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Linear Regression Algorithm  
+## Getting Started
 
----
+To get a local copy up and running, follow these simple steps.
 
-## Project Structure
+### Prerequisites
 
-- Data/: Contains CSV files for training and testing the model.  
-- filtrando_dados.py: Main script that performs data filtering, training, and prediction.
+Make sure you have the following installed on your system:
+* Python 3.9 or higher
+* pip
 
----
+### Installation
 
-## How to Run
+1.  Clone the repository to your local machine.
+    ```bash
+    git clone [https://github.com/BBennemann/Home-Value-Predictor.git](https://github.com/BBennemann/Home-Value-Predictor.git)
+    ```
+2.  Navigate to the project directory.
+    ```bash
+    cd Home-Value-Predictor
+    ```
+3.  It is highly recommended to create and activate a virtual environment.
+    ```bash
+    # For Windows
+    python -m venv venv
+    venv\Scripts\activate
 
-1. Create and activate a virtual environment (optional but recommended):  
-   python -m venv .venv  
-   .venv\Scripts\activate  
+    # For macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+4.  Install the required packages.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2. Install the required packages:  
-   pip install pandas numpy scikit-learn  
+## Usage Instructions
 
-3. Run the main script:  
-   python filtrando_dados.py  
+The project has two main functionalities: training the model and running the web application.
 
----
+1.  **Train the Prediction Model**
 
-## Notes
+    To train the model with the dataset located in the `/database` folder, run the following command. The trained model will be saved in the `/models` directory.
+    ```bash
+    python ModelGenerator.py
+    ```
 
-- This project is educational and intended for experiments and learning purposes.  
-- Feel free to explore, modify, and expand the model or the dataset as needed.  
+2.  **Run the Web Application**
 
----
+    After the model is trained, you can start the interactive web interface with Streamlit.
+    ```bash
+    streamlit run app.py
+    ```
+    Open your browser and go to `http://localhost:8501` to use the application.
 
-Made with clarity, simplicity, and purpose.
+## Contributors
 
----
-
-## Sobre o Projeto
-
-HOME-VALUE-PREDICTOR é um projeto de aprendizado de máquina desenvolvido em Python que utiliza Regressão Linear para prever os preços de casas com base em dados contidos em planilhas CSV.  
-O projeto realiza leitura e processamento de dados estruturados com um pipeline limpo usando Pandas, NumPy e Scikit-learn.
-
-O objetivo principal é fornecer um exemplo simples, porém eficaz, de um modelo de previsão de preços de imóveis utilizando técnicas clássicas de regressão.
-
----
-
-## Tecnologias Utilizadas
-
-- Python 3  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Algoritmo de Regressão Linear  
-
----
-
-## Estrutura do Projeto
-
-- Data/: Contém os arquivos CSV de treinamento e teste do modelo.  
-- filtrando_dados.py: Script principal responsável por filtrar os dados, treinar e realizar as previsões.  
-
----
-
-## Como Executar
-
-1. Criar e ativar o ambiente virtual (opcional, mas recomendado):  
-   python -m venv .venv  
-   .venv\Scripts\activate  
-
-2. Instalar os pacotes necessários:  
-   pip install pandas numpy scikit-learn  
-
-3. Executar o script principal:  
-   python filtrando_dados.py  
-
----
-
-## Observações
-
-- Este projeto é educacional e voltado para experimentação e aprendizado.  
-- Sinta-se à vontade para explorar, modificar ou expandir o modelo e os dados conforme desejar.  
-
----
-
-Feito com clareza, simplicidade e propósito.
+* **Bernardo Thomas Bennemann** - *Project Owner* - [BBennemann](https://github.com/BBennemann)
