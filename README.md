@@ -16,6 +16,20 @@ This application was built with:
 
 This project was developed as a personal study in machine learning and data science, originating from the "House Prices - Advanced Regression Techniques" challenge on Kaggle.
 
+## Project Structure
+
+The repository is organized as follows:
+
+```
+.
+├── DesafioKaggle/         # Contains the original notebook with the solution for the Kaggle challenge.
+├── data/                  # Stores the datasets used for training and testing.
+├── models/                # Saved machine learning models after training.
+├── ModelGenerator.py      # Script to train and save the prediction model.
+├── app.py                 # Script to run the interactive Streamlit web application.
+└── requirements.txt       # A list of all necessary Python packages.
+```
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
